@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 18px;
+}
+.wh100 {
+  width: 100%;
+  height: 100%;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+#app {
+  margin: 0 auto;
+  width: 500px;
+  height: 700px;
+  box-sizing: border-box;
+  border: 1px solid #666;
+  position: relative;
+  overflow: hidden;
+}
+#menu {
+  position: relative;
+}
+.createRoom {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.joinRoom {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+#roomList {
+}
+#roomList ul{
+  width: 80%;
+  height: 80%;
+  margin: 10% auto;
+  overflow-y: auto;
+  box-sizing: border-box;
+  border: 1px solid #f60;
+}
+#roomList ul li {
+  width: 80%;
+  height: 20%;
+  box-sizing: border-box;
+  border: 1px solid #f60;
+}
+#room {
+}
+#room ul {
+  width: 80%;
+  height: 80%;
+  margin: 10% auto;
+  overflow-y: auto;
+  box-sizing: border-box;
+  border: 1px solid #f60;
+}
+#room ul li {
+  width: 40%;
+  height: 10%;
+  box-sizing: border-box;
+  border: 1px solid #f60;
+}
+#userInfo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

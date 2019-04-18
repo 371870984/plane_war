@@ -6,9 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <script src="./javascript/socket.io 2.2.0.js"></script>
-    <script src="./javascript/client.js"></script>
+    <script src="./javascript/jquery-3.4.0.js"></script>
+    <link type="text/css" rel="styleSheet" href="./css/main.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" class="wh100">
+      <div id="menu" class="show wh100">
+        <span class="createRoom">创建房间</span>
+        <span class="joinRoom">加入房间</span>
+      </div>
+      <div id="roomList" class="hide wh100">
+          <ul></ul>
+      </div>
+      <div id="room" class="hide wh100">
+        <ul></ul>
+      </div>
+      <div id="userInfo"></div>
+    </div>
+    <script>
+      var socket = io.connect("ws://10.2.10.46:3000");
+      var userObj = {}
+      function ranNum(min = 0, max = 100) {
+        return Math.round(Math.random() * (max - min) + min);
+      }
+    </script>
+    
+    <script src="./javascript/client.js"></script>
+    <script src="./javascript/menu.js"></script>
+    <script src="./javascript/roomList.js"></script>
+    <script src="./javascript/room.js"></script>
   </body>
 </html>
