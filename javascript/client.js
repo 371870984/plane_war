@@ -20,10 +20,10 @@
   socket.on("other_user_login", obj => {
     console.log("其他用户登陆成功: ", obj);
   });
-  
+
   //用户断开连接
   socket.on("other_disconnect", obj => {
-    console.log("other_disconnect: ", obj);
+    console.log("other_disconnect: ", socket, obj);
   });
   socket.on("reconnect", attemptNumber => {
     console.log("reconnect: ", attemptNumber);

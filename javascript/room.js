@@ -16,8 +16,13 @@ $(function() {
     oLi.innerHTML = `用户名：${obj.userName}<br>用户Id:${obj.userId}`;
     $("#room ul").append(oLi);
   });
-  //其他用户离开房间成功
+  //用户离开房间成功
   socket.on("leave_room_success", obj => {
     console.log("离开房间成功: ", obj);
+  });
+  //其他用户离开房间成功
+  socket.on("other_leave_room_success", obj => {
+    console.log($("#room ul li"))
+    console.log("其他用户离开房间成功: ", obj);
   });
 });
